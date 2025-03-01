@@ -1,0 +1,22 @@
+ASIGNACION DE DIRECCIONES
+Un puntero puede ser asignado por la dirección de memoria de otra variable utilizando el operador de dirección (&)
+DEREFERENCIACION
+Permite acceder al valor almacenado en la dirección de memoria a la que apunta el puntero, se utiliza el operador de indirección (*)
+
+ejemplo:
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int x= 42;
+int *ptr = &x;
+printf("valor de x: %d\n", x);
+printf("valor al que apunta ptr: %d\n", *ptr);
+
+*ptr = 100; //modificamos el valor de x a traves del puntero
+printf("nuevo valor de x: %d\n", x);
+
+return 0;
+}
