@@ -1,0 +1,25 @@
+Titulo: aritmética de punteros
+Los punteros pueden ser incrementados o decrementados para moverse a través de bloques de memoria como arreglos, la aritmética del puntero depende del tipo de dato al que apunte el puntero
+Incremento (++): avanza el puntero al siguiente elemento
+Decremento (--): retrocede el puntero al elemento anterior
+Suma/resta (+/-): permite saltar varios elementos
+
+Ejemplo:
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int arr[5] = {10, 20, 30, 40, 50};
+int *ptr = arr; //ptr apunta al primer elemento del arreglo
+
+printf("primer elemento: %d\n", *ptr);
+ptr++; //movemos el puntero al siguiente elemento
+printf("Segundo elemento: %d\n", *ptr);
+ptr += 2; // movemos el puntero dos posiciones adelante
+printf("cuarto elemento: %d\n", *ptr);
+
+return 0;
+}
+
